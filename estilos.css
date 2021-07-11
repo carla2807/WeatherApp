@@ -1,0 +1,223 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+header{
+    background: linear-gradient(to right bottom, #ea2c62, #120078);
+    color:white;
+    font-size: 38px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px;
+}
+.logo{
+    width: 30px;
+}
+
+aside{
+background-color:#6165F8;
+margin:5px;
+padding: 5px;
+
+}
+
+.search-city-text{
+margin-top: 5px;
+margin-left: 5px;
+padding: 5px;
+color: white;
+}
+
+.sideBar{
+    display: flex;
+    margin:5px;
+    padding: 5px;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.date-and-time{
+    font-size: 25px;
+}
+
+.current-selected-city{
+ font-size: 35px;
+}
+
+.main-section{
+    display: flex;
+    flex-grow: 4;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    flex-direction: column;
+}
+
+.card-section{
+   
+    margin: 5px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    background-color: #BFBFBF;
+}
+
+
+.future-main-div {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.future-forcast-section {
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    flex-grow: 1;
+}
+
+.five-day-forecast {
+    margin: 5px;
+    padding: 15px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.future-card {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.future-card-body {
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#UVdiv {
+    background-color:linear-gradient(45deg, #833DB8, #B998DD);
+
+    padding: 4px;
+}
+
+.input {
+    margin: 2px;
+    display: flex;
+    width: 100%;
+}
+
+.input-section {
+    height: 40px;
+    width: 80%;
+    margin: 2px;
+}
+
+.fas {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color:lightslategrey;
+    color: white;
+    cursor: pointer;
+}
+.fa{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+li {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 828px) {  
+    .container{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .future-card {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .future-card-body {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .future-main-div {
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .five-day-forecast, .card-section {
+        justify-content: center;
+        text-align: center;
+    }
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .future-card {
+        width: 100%;
+        height: min-content;
+        justify-content: center;
+    }
+
+    .future-card-body {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .future-main-div {
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .five-day-forecast, .card-section {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+  
