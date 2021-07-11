@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppClima</title>
+    <!--estilos-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/1ac19bcbef.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<header class=""><img class="logo"src="assets/logo.png">
+    Weather App
+</header>
+
+    <div class="container">
+    <aside class="sideBar" >
+        <div class="search-city-text">
+            Search:
+        </div>
+        <div class ="input">
+            <input type="text" class="input-section" placeholder="Search for places"><i class="fas fa-search"></i>
+        </div>
+        <div class="city-section">
+        </div>
+        <i class="fa solid fa-trash"></i>
+    </aside>
+
+    <main class="main-section" id="main-section">
+        <div class="card-section">
+            <div class="date-and-time"></div>
+            <div class="current-selected-city"></div>
+            <img class="icon">
+            <div class="description"></div>
+            <div class="current-selected-city-details"></div>
+            </div>
+            <p class="five-day-forecast">Week Forecast:</p>
+            <div class="future-main-div">
+                <div class="future-forcast-section" id="future-forcast-section"></div>
+            </div>
+        </main>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="AppClima.js"></script>
+    
+</body>
+</html>
